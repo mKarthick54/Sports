@@ -2,6 +2,7 @@ plugins {
 	id 'java'
 	id 'org.springframework.boot' version '3.2.1'
 	id 'io.spring.dependency-management' version '1.1.4'
+	id  "com.google.cloud.tools.jib" version "3.4.0"
 }
 
 group = 'com.example'
@@ -25,8 +26,20 @@ dependencies {
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
 	implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.2.0'
+	implementation 'org.springframework.boot:spring-boot-starter-webflux:3.2.0'
+}
 
-
+jib {
+	from {
+		image = 'azul/zulu-openjdk:17-jre'
+	}
+	to {
+		image = 'us-central1-docker.pkg.dev/springboot-410813/spyder/score'
+		auth {
+			username = "oauth2accesstoken"
+			password = "ya29.a0AfB_byA1LktvFcnUrrijjhNAbswoqbZdzFgstzKoJJsG-X-eokHuqvgwwzP3wLPmXYBSTka8QXkFpmwAU4zQlfK3qyg6LnYowvAwrmLKgdiqFnYSbY2wgLsiT3U0eYiHa36_O7xL3N_JXGU_WDwAYwgwBTF4rl27fKtT4Mdb27MaCgYKAeYSARASFQHGX2MiN6MhvuMNNhGROr6x0RT7qg0178"
+		}
+	}
 }
 
 tasks.named('test') {
