@@ -37,7 +37,7 @@ jib {
 		image = 'us-central1-docker.pkg.dev/springboot-410813/spyder/score'
 		auth {
 			username = "oauth2accesstoken"
-			password = "ya29.a0AfB_byCQHch7QiOFAgnkwVCek5HMPHJpIUQnuF-dvrIQgUS27HnSIR4zSDjYXHPhviAkT8EM6EAgLABc9PdA9Ka_7SKdHFQ2l8ND74rfhJCSB8xWtGism-TH0cVvqdVOx0rGaMhDfcX8Lntk5t3PLHTG1dEsrA8zfU2OS26YEUoaCgYKAa8SARASFQHGX2MiN8AMS-Bg6b5Yv9_QHPKgLg0178"
+			password = "ya29.a0AfB_byCFXMmtInAgdzS97l02derTfOcNlneOBchMor77s6DNVdscGRrVJTq4wvDDnxeB7yMXEKr8-m97Ph1yUhrdtY-UjZQ3bIp-P11MD9oYjn8UZI_Z0HGArxy4H9w-CzxZGKhvLqIuvNV1SyZEtymrQu3YgHDHJM1vQDgkpnEaCgYKARoSARASFQHGX2Mi-jXjlHDcXEY0Pff9P0Fbdw0178\n"
 		}
 	}
 }
